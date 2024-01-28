@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script defer src="./js/app.js" type="module"></script>
 </head>
 
 <body>
@@ -13,8 +14,19 @@
         <button onclick="location.reload()">Refresh</button>
     </header>
     <main>
-        <button >Show More</button>
+        <div id="first-load" class="center">
+            <img width="300" height="300" src="logo.svg" />
+            <p>Parking your car deals</p>
+        </div>
+        <div class="mdl-grid"><!--Dynamic Data here--></div>
+        <button class="center">Show More</button>
     </main>
+    <script id="car-card" type="text/template">
+        <div class="card" style="background-image: url('${image}')" 
+            onclick="pageEvents.loadCarPage('${details_id}')">
+        <div class="card-text">${brand} ${model} ${year} ($${price})</div>
+        </div>
+    </script>
 </body>
 
 </html>
