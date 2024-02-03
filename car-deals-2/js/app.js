@@ -4,6 +4,7 @@ import { loadCars } from "./carService.js";
 
 window.pageEvents = {
   loadCarPage,
+  loadCars,
 };
 
 loadCars();
