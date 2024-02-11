@@ -36,6 +36,17 @@ export default async () => {
     console.log("Controller Changed!");
   });
 
+  // Evento que nos sirve para comunicación directa del cliente (navegador) con el SW.
+  navigator.serviceWorker.addEventListener("message", (e) => {
+    const clientId = e.data.clientId;
+    const message = e.data.message;
+    console.log("From Client:", clientId, message);
+  });
+
+  if (navigator.serviceWorker.controller) {
+    navigator.serviceWorker.controller.postMessage("hello");
+  }
+
   // Se comprueba si hay una nueva versión del SW cada vez que se navega a una página que forme parte de su scope o con cada fetch
   // Pero también podemos comprobar manualmente si hay una nueva versión de la siguiente manera:
   setInterval(() => {

@@ -69,7 +69,14 @@ self.addEventListener("fetch", (event) => {
     // Network First Then Offline strategy
     return event.respondWith(networkFirstStrategy(event.request));
   }
+
+  return event.respondWith(cacheFirstStrategy(event.request));
 });
+
+const cacheFirstStrategy = async (request) => {
+  const cacheResponse = await caches.match(request);
+  return cacheResponse || fetchRequestAndCache(request);
+};
 
 const networkFirstStrategy = async (request) => {
   try {
@@ -99,3 +106,7 @@ const getCacheName = (request) => {
     return carDealsCacheName;
   }
 };
+
+self.addEventListener("message", (e) => {
+  e.source.postMessage({ clientId: e.source.dispatchEvent, message: "sw" });
+});

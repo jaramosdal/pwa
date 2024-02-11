@@ -11,7 +11,7 @@ export const addCars = async (newCars) => {
 };
 
 export const getCars = async () => {
-  // Como en BBDD local, los últimos se almacenan los primeros, damos la vuelta para que los últimos sean los últimos
+  // Como en BBDD local, los últimos se almacenan los primeros, damos la vuelta para que los últimos sean efectivamente los últimos
   const keys = (await carsInstance.keys()).reverse();
   if (lastIndex >= keys.length) return;
   const results = await carsInstance.getItems(keys.splice(lastIndex + 1, 3));
