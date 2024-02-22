@@ -1,0 +1,29 @@
+{
+  "name": "hat-for-cat",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "test": "mocha testing/unit/",
+    "mock": "mocha testing/mock/test.js",
+    "workbox": "workbox generateSW workbox/workbox-config.js",
+    "sel": "node ./testing/selenium/selenium-test.js"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "morgan": "~1.9.1",
+    "nan": "^2.14.1",
+    "web-push": "3.4.3"
+  },
+  "devDependencies": {
+    "mocha": "^7.1.1",
+    "chai": "^4.2.0",
+    "service-worker-mock": "^2.0.5",
+    "selenium-webdriver": "^4.0.0-alpha.7",
+    "workbox-cli": "^5.1.2"
+  }
+}

@@ -1,0 +1,17 @@
+CACHE MANIFEST
+# v1.0
+
+CACHE:
+/css/lib/main.css
+/css/app.css
+/css/lib/notifIt.css
+/css/navigationBar.css
+/images/logo.png
+/images/bg01.png
+/images/bg02.png
+/images/bg03.png
+/hats/trilby.png
+/hats/uncleSam.png
+#/hats/magician.png
+#/hats/sombrero.jpg
+/js/indexPage.js

@@ -1,0 +1,84 @@
+ Module 2 - Service Worker Recap: Why, How, and Tooling
+----------------------------------------------------------------
+Nate Taylor - JavaScript promises and async programming Pluralsight course
+https://app.pluralsight.com/library/courses/javascript-promises-async-programming/table-of-contents
+
+Nike Molnar - Building Offline Web Apps with Service Worker Pluralsight course
+https://app.pluralsight.com/library/courses/building-offline-web-apps-service-worker/table-of-contents
+
+Jake Archibald - Application Cache limitations article
+https://alistapart.com/article/application-cache-is-a-douchebag/
+
+Can I use - browser feature support
+https://caniuse.com/
+
+Module 3 - Understanding Service Worker Lifecycle: Installation, Errors, and Updating
+----------------------------------------------------------------
+Service Worker specification
+https://www.w3.org/TR/service-workers-1/
+
+Self destroying Service Worker
+https://github.com/NekR/self-destroying-sw
+
+Client.Claim example
+https://developers.google.com/web/fundamentals/primers/service-workers/lifecycle#clientsclaim
+
+Module 4 - Understanding Cache and Fetch APIs
+----------------------------------------------------------------
+Embedded fallback SW
+https://serviceworke.rs/strategy-embedded-fallback.html 
+
+Cache update approaches
+https://serviceworke.rs/cache-from-zip.html
+
+Module 5 - Communicating with Service Workers, Background Sync, Notification and Push APIs
+----------------------------------------------------------------
+Periodic Background sync proposal
+https://github.com/WICG/BackgroundSync/blob/master/explainers/periodicsync-explainer.md
+
+Push Simple receipe
+https://serviceworke.rs/push-simple.html
+
+Module 6 - Making Service Worker Development Easier – Builds, Testing and Third-Party Libraries
+----------------------------------------------------------------
+Testing Service Workers
+https://medium.com/dev-channel/testing-service-workers-318d7b016b19
+
+Wait for sw state
+https://gist.githubusercontent.com/gauntface/8719ab8b0a362ccf3cd56ad27b15fa41/raw/b3b30a37902cb68f5ce88bea74d393b59a291465/wait-for-sw-state.js
+
+Running Mocha in the browser
+https://mochajs.org/#running-mocha-in-the-browser
+
+Selenium Web Driver
+https://www.npmjs.com/package/selenium-webdriver
+
+Workbox Testing
+https://github.com/GoogleChrome/workbox/tree/master/infra/testing
+
+Angular Service Worker Support
+https://angular.io/guide/service-worker-getting-started
+
+Create React Service Worker Support
+https://create-react-app.dev/docs/making-a-progressive-web-app/
+
+Cli plugin PWA
+https://cli.vuejs.org/core-plugins/pwa.html
+
+Service Worker Webpack Plugin
+https://www.npmjs.com/package/serviceworker-webpack-plugin
+
+UpUp
+https://www.talater.com/upup/
+
+Workbox
+https://developers.google.com/web/tools/workbox
+
+Service Worker Cookbook
+https://serviceworke.rs/
+
+Jake Archibald - Is Service Worker Ready Resources
+https://jakearchibald.github.io/isserviceworkerready/
+
+Workbox Sourcecode
+https://github.com/GoogleChrome/workbox

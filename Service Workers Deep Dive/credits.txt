@@ -1,0 +1,22 @@
+Credits
+----------------
+Layout based on modified HTML template Arcana from html5up.net (Free for personal and commercial use under the CCA 3.0 license - html5up.net/license)
+
+Images hat01.jpg, hat02.jpg, hat03.jpg and hat04.jpg are from Shutterstock and for demo purposes and not for distribution.
+
+Image src:
+https://www.shutterstock.com/image-photo/cat-wearing-felt-hat-feather-265170299 
+https://www.shutterstock.com/image-photo/siamese-red-top-hat-sitting-looking-164910989
+https://www.shutterstock.com/image-photo/funny-british-cat-hat-on-isolated-1249893136
+https://www.shutterstock.com/image-photo/scottish-fold-kitten-wearing-black-hat-79248811
+https://www.shutterstock.com/image-photo/cat-wearing-hat-43885513
+
+Some code inspired/based on Service Worker Cookbook: https://serviceworke.rs/
+Some of testing code inspired/based on code in Matt Gaunt's article at: https://medium.com/dev-channel/testing-service-workers-318d7b016b19
+
+Contains code Mochajs library: https://mochajs.org/
+Contains chai library: https://www.chaijs.com/
+
+Cat Lorem Ipsum text generated from https://www.loremipsums.nl/lorem-ipsum-origineel/cat-ipsum/
+
+

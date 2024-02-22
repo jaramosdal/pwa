@@ -1,0 +1,34 @@
+<!-- Clears down any registered Service workers and removes Cache -->
+<!DOCTYPE html>
+
+<script>
+
+console.log('begin cleardown')
+
+navigator.serviceWorker.getRegistrations()
+.then(function(regs) {
+    const unregisterPromise = regs.map(function(reg) {
+
+        console.log('unregistering sw at scope: ' + reg.scope);
+        return reg.unregister();
+
+    });
+
+    return Promise.all(unregisterPromise);
+})
+.then(function(){
+
+    return window.caches.keys()
+    .then(function(cacheKeys) {
+    
+        const unregisterPromise = cacheKeys.map( function(cacheName) {
+            console.log('deleting cache ' + cacheName);
+            return window.caches.delete(cacheName);
+        });
+
+        return Promise.all(unregisterPromise);
+
+    });
+});
+
+</script>
